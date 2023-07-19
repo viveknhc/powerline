@@ -1,0 +1,111 @@
+<style>
+  .wizard-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .wizard-video {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .wizard-navigation {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .prev-button,
+  .next-button {
+    padding: 10px 20px;
+    background-color: #49BEFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #4f73d9;
+  }
+
+  .prev-button[disabled],
+  .next-button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+</style>
+
+
+<div class="wizard-container">
+  <video class="wizard-video video-js" id="wizard-video" controls>
+    <source src="" type="video/mp4">
+  </video>
+
+  <!-- 
+      <video id="wizard-video my-video" class="video-js wizard-video" controls preload="auto" width="640" height="264"
+      poster="assets/images/backgrounds/bronze.png" data-setup="{}">
+      <source src="" type="video/mp4">
+       
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>  -->
+
+
+
+  <div class="wizard-navigation">
+    <button class="prev-button" id="prev-button" disabled>Previous</button>
+    <button class="next-button" id="next-button">Next</button>
+  </div>
+</div>
+
+<script>
+  var videoPlayer = document.getElementById('wizard-video');
+  var prevButton = document.getElementById('prev-button');
+  var nextButton = document.getElementById('next-button');
+  var videos = [
+    'assets/video/file_example_MP4_480_1_5MG.mp4',
+    'assets/video/video (2160p).mp4',
+    'video3.mp4',
+    'video4.mp4',
+    'video5.mp4'
+  ];
+  var currentVideoIndex = 0;
+
+  // Update the video source and enable/disable buttons
+  function updateVideo() {
+    videoPlayer.src = videos[currentVideoIndex];
+    prevButton.disabled = currentVideoIndex === 0;
+    nextButton.disabled = true; // Disable the next button initially
+    videoPlayer.addEventListener('ended', onVideoEnded); // Add ended event listener
+  }
+
+  // Event listener for previous button
+  prevButton.addEventListener('click', function () {
+    if (currentVideoIndex > 0) {
+      currentVideoIndex--;
+      updateVideo();
+    }
+  });
+
+  // Event listener for next button
+  nextButton.addEventListener('click', function () {
+    if (currentVideoIndex < videos.length - 1) {
+      currentVideoIndex++;
+      updateVideo();
+    }
+  });
+
+  // Event handler for video ended
+  function onVideoEnded() {
+    nextButton.disabled = false; // Enable the next button when video ends
+    videoPlayer.removeEventListener('ended', onVideoEnded); // Remove the ended event listener
+  }
+
+  // Initialize the video player
+  updateVideo();
+</script>

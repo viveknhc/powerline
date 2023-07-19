@@ -1,0 +1,41 @@
+
+<style>
+    .tab.active {
+      background-color: #ccc;
+    }
+
+    /* Styling for the tab content */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-top: none;
+    }
+  </style>
+
+
+
+
+  <ul class="tab-menu">
+    <li class="tab">Tab 1</li>
+    <li class="tab">Tab 2</li>
+    <li class="tab">Tab 3</li>
+  </ul>
+
+  <div class="tab-content">Content for Tab 1</div>
+  <div class="tab-content">Content for Tab 2</div>
+  <div class="tab-content">Content for Tab 3</div>
+
+  <script>
+    const tabItems = document.querySelectorAll('.tab');
+    const tabContent = document.querySelectorAll('.tab-content');
+    tabItems.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        tabItems.forEach((item) => item.classList.remove('active'));
+        tabContent.forEach((content) => (content.style.display = 'none'));
+        tab.classList.add('active');
+        tabContent[index].style.display = 'block';
+      });
+    });
+  </script>
