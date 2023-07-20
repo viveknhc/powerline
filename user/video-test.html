@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Styling for the tab menu */
+    .tab-menu {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tab-menu li {
+      margin-right: 10px;
+      cursor: pointer;
+      padding: 5px 10px;
+      background-color: #eee;
+      border-radius: 4px;
+    }
+
+    .tab-menu li.active {
+      background-color: #ccc;
+    }
+
+    /* Styling for the tab content */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-top: none;
+    }
+
+    /* Style to disable pointer events on inactive tabs */
+    .tab-menu .tab:not(.active) {
+      pointer-events: none;
+      opacity: 0.6;
+      /* Optionally, reduce the opacity of inactive tabs for visual indication */
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="tab-menu">
+    <li class="tab active">Tab 1</li>
+    <li class="tab ">Tab 2</li>
+    <li class="tab">Tab 3</li>
+  </ul>
+
+  <div class="tab-content" style="display: block;">
+    <video id="video1" controls>
+      <source src="assets/video/video (2160p).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="tab-content">
+    <video id="video2" controls>
+      <source src="path/to/video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="tab-content">
+    <video id="video3" controls>
+      <source src="path/to/video3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+
+
+  <div class="tab-content">Content for Tab 2</div>
+  <div class="tab-content">Content for Tab 3</div>
+  <script>
+    // Get all the tab menu items and tab content
+    const tabItems = document.querySelectorAll('.tab');
+    const tabContent = document.querySelectorAll('.tab-content');
+  
+    // Show the first tab content by default
+    tabContent[0].style.display = 'block';
+  
+    // Function to activate the next tab
+    function activateNextTab() {
+      const currentActiveTab = document.querySelector('.tab.active');
+      const nextActiveTab = currentActiveTab.nextElementSibling;
+      if (nextActiveTab) {
+        // Remove 'active' class from all tab menu items and tab content
+        tabItems.forEach((item) => item.classList.remove('active'));
+        tabContent.forEach((content) => (content.style.display = 'none'));
+  
+        // Add 'active' class to the next tab menu item
+        nextActiveTab.classList.add('active');
+        // Display the corresponding tab content
+        document.querySelector(`.${nextActiveTab.id}`).style.display = 'block';
+      }
+    }
+  
+    // Add event listener to each tab menu item
+    tabItems.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        // Check if the clicked tab contains a video element
+        const video = document.getElementById(`video${index + 1}`);
+        if (video) {
+          // Check if the video is not ended
+          if (!video.ended) {
+            alert("Please watch the entire video before proceeding to the next tab.");
+            return;
+          }
+        }
+  
+        activateNextTab();
+      });
+    });
+  
+    // Add event listener to video elements for 'ended' event
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video, index) => {
+      video.addEventListener('ended', () => {
+        activateNextTab();
+      });
+    });
+  </script>
+  
+</body>
+
+</html>
