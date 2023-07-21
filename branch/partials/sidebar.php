@@ -48,7 +48,7 @@
             <ul id="sidebarnav">
 
               <li class="sidebar-item">
-                <a class="sidebar-link" href="user-list" aria-expanded="false">
+                <a class="sidebar-link" href="dashboard" aria-expanded="false">
                   <span>
                     <i class="ti ti-list"></i>
                   </span>

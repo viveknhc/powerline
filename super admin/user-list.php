@@ -104,13 +104,6 @@
             </div>
         </div>
 
-        <footer>
-            <div class="text-center">
-              <p>copyright @ <script>document.write(new Date().getFullYear())</script> <span class="text-primary"> Powerline solutions</span> </p>
-            </div>
-          </footer>
-              
-
 
     </div>
 </div>
@@ -130,47 +123,55 @@
             <div class="modal-body">
                 <form>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Employee Id</label>
+                                <input type="number" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
                                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <input type="text" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Address</label>
+                                <input type="address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 pb-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label">Passport Number</label>
+                                <input type="Number" class="form-control">
                             </div>
                         </div>
                     </div>
+
                 </form>
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light-primary text-primary font-medium waves-effect text-start">
-                    Submit
+                    Update
                 </button>
 
                 <button type="button" class="btn btn-light-danger text-danger font-medium waves-effect text-start"
@@ -179,7 +180,7 @@
                 </button>
             </div>
         </div>
-  
+
     </div>
 
 </div>

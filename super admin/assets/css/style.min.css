@@ -55729,3 +55729,27 @@ ul {
 .login-logo{
     max-width: 50px;
 }
+
+.company-logo{
+    max-width: 50px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar-nav{
+    background-color: #2e3193 !important;
+}
+
+.sidebar-item i{
+    color: #fff !important;
+}
+
+.sidebar-item .hide-menu{
+    color: #fff !important;
+}
+
+
+.simplebar-content{
+    padding: 20px 24px !important;
+}

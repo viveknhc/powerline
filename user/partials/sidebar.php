@@ -43,14 +43,14 @@
             </div>
           </div>
           <!-- Sidebar navigation-->
-          <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+          <nav class="sidebar-nav side-navbar scroll-sidebar" data-simplebar>
             <ul id="sidebarnav">
               <li class="sidebar-item">
                 <a class="sidebar-link" href="index" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture"></i>
+                    <i class="ti ti-aperture text-white"></i>
                   </span>
-                  <span class="hide-menu">My Courses</span>
+                  <span class="hide-menu text-white">My Courses</span>
                 </a>
               </li>
 

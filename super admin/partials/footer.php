@@ -237,7 +237,7 @@
         </div>
       </nav>
     </div>
-    
+
     <!--  Search Bar -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-lg">
@@ -327,9 +327,9 @@
           </div>
         </div>
       </div>
-    </div>  
-  
-  
+    </div>
+
+
 
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
@@ -341,13 +341,16 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    
+
+    <script src="assets/libs/jquery.repeater/jquery.repeater.min.js"></script>
+<script src="assets/js/plugins/repeater-init.js"></script>
+
     <!-- <script src="assets/libs/prismjs/prism.js"></script>
     <script src="assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
     <script src="assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="assets/js/forms/form-wizard.js"></script> -->
 
-    
+
 
   </body>
 </html>

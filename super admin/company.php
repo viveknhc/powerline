@@ -11,7 +11,7 @@
             <div class="card-body px-4 py-3">
                 <div class="row align-items-center">
                     <div class="col-9">
-                        <h4 class="fw-semibold mb-8">User List</h4>
+                        <h4 class="fw-semibold mb-8">Company List</h4>
 
                     </div>
                     <div class="col-3">
@@ -26,6 +26,10 @@
         <div class="card">
             <div class="card-body">
 
+                <div class="text-end pb-3">
+                    <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#add-company">Add new Company</button>
+                </div>
+
                 <div class="table-responsive">
                     <div id="zero_config_wrapper" class="dataTables_wrapper">
                         <table id="zero_config" class="table border  table-bordered text-nowrap dataTable"
@@ -36,16 +40,17 @@
                                     <th class="sorting sorting_asc" tabindex="0" aria-controls="zero_config" rowspan="1"
                                         colspan="1" aria-sort="ascending"
                                         aria-label="Name: activate to sort column descending" style="width: 155.391px;">
-                                        Name</th>
+                                        Logo</th>
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
                                         aria-label="Position: activate to sort column ascending"
-                                        style="width: 257.406px;">Position</th>
+                                        style="width: 257.406px;">Company Name</th>
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
                                         aria-label="Office: activate to sort column ascending"
-                                        style="width: 115.703px;">Office</th>
+                                        style="width: 115.703px;">Registraion Id</th>
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
-                                        aria-label="Age: activate to sort column ascending" style="width: 46.125px;">Age
+                                        aria-label="Age: activate to sort column ascending" style="width: 46.125px;">Location
                                     </th>
+                                    
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
                                         aria-label="Start date: activate to sort column ascending"
                                         style="width: 106.969px;">Status</th>
@@ -56,10 +61,12 @@
                             </thead>
                             <tbody>
                                 <tr class="odd">
-                                    <td class="sorting_1">Airi Satou</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>33</td>
+                                    <td class="sorting_1">
+                                        <img class="company-logo" src="assets/images/logo/logo-small.png" alt="">
+                                    </td>
+                                    <td>dfyhgh</td>
+                                    <td>COMP33</td>
+                                    <td>calicut</td>
                                     <td><button type="button"
                                             class="btn mb-1 waves-effect waves-light btn-rounded btn-outline-success">
                                             Active
@@ -70,16 +77,18 @@
                                         </button>
 
                                         <button type="button" class="btn btn-light-primary btn-circle"
-                                            data-bs-toggle="modal" data-bs-target="#user-edit">
+                                            data-bs-toggle="modal" data-bs-target="#company-edit">
                                             <i class="fs-5 ti  ti-pencil text-primary"></i>
                                         </button>
                                     </td>
                                 </tr>
                                 <tr class="even">
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
+                                    <td class="sorting_1">
+                                        <img class="company-logo" src="assets/images/logo/logo-small.png" alt="">
+                                    </td>
+                                    <td>tdyhrtfdhfgh</td>
+                                    <td>COMP50</td>
+                                    <td>Wayanad</td>
                                     <td><button type="button"
                                             class="btn mb-1 waves-effect waves-light btn-rounded btn-outline-danger">
                                             Suspend
@@ -89,7 +98,7 @@
                                         </button>
 
                                         <button type="button" class="btn btn-light-primary btn-circle"
-                                            data-bs-toggle="modal" data-bs-target="#user-edit">
+                                            data-bs-toggle="modal" data-bs-target="#company-edit">
                                             <i class="fs-5 ti  ti-pencil text-primary"></i>
                                         </button>
 
@@ -104,13 +113,7 @@
             </div>
         </div>
 
-        <footer>
-            <div class="text-center">
-              <p>copyright @ <script>document.write(new Date().getFullYear())</script> <span class="text-primary"> Powerline solutions</span> </p>
-            </div>
-          </footer>
-              
-
+        
 
     </div>
 </div>
@@ -118,50 +121,43 @@
 
 <!-- EDIT MODAL -->
 
-<div class="modal fade" id="user-edit" tabindex="-1" aria-labelledby="bs-example-modal-lg" aria-hidden="true">
+<div class="modal fade" id="company-edit" tabindex="-1" aria-labelledby="bs-example-modal-lg" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header d-flex align-items-center">
                 <h4 class="modal-title" id="myLargeModalLabel">
-                    Edit user details
+                    Edit Company details
                 </h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form>
-                    <div class="row">
-                        <div class="col-lg-6">
+                    <div class="row">    
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Company Name</label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Registration Id</label>
+                                <input type="number" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Location</label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text́" class="form-control">
+                                <label for="exampleInputEmail1" class="form-label">Company Logo</label>
+                                <input type="file" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -179,11 +175,71 @@
                 </button>
             </div>
         </div>
-  
+        
     </div>
 
 </div>
 
+<!-- ADD COMPANY -->
+
+<div class="modal fade" id="add-company" tabindex="-1" aria-labelledby="bs-example-modal-lg" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header d-flex align-items-center">
+                <h4 class="modal-title" id="myLargeModalLabel">
+                    Add Company
+                </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">    
+                        <div class="col-lg-6 pb-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label">Company Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 pb-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label">Registration Id</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 pb-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label">Location</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 pb-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label">Company Logo</label>
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary text-primary font-medium waves-effect text-start">
+                    Submit
+                </button>
+
+                <button type="button" class="btn btn-light-danger text-danger font-medium waves-effect text-start"
+                    data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
 
 
 

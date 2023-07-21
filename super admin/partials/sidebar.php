@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--  Title -->
-    <title>Power Line Solutions</title>
+    <title>Admin Power Line Solutions</title>
     <!--  Required Meta Tag -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,16 +43,85 @@
             </div>
           </div>
           <!-- Sidebar navigation-->
-          <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+          <nav class="sidebar-nav  scroll-sidebar" data-simplebar>
             <ul id="sidebarnav">
               <li class="sidebar-item">
                 <a class="sidebar-link" href="index" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture"></i>
+                    <i class="ti ti-list"></i>
                   </span>
-                  <span class="hide-menu">My Courses</span>
+                  <span class="hide-menu">Dashboard</span>
                 </a>
               </li>
+
+
+              <li class="sidebar-item">
+                <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
+                  <span class="d-flex">
+                    <i class="ti ti-user"></i>
+                  </span>
+                  <span class="hide-menu">User</span>
+                </a>
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a href="add-user" class="sidebar-link">
+                      <div class="round-16 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-circle"></i>
+                      </div>
+                      <span class="hide-menu">Add User</span>
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="user-list" class="sidebar-link">
+                      <div class="round-16 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-circle"></i>
+                      </div>
+                      <span class="hide-menu">User List</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="company" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-archive"></i>
+                  </span>
+                  <span class="hide-menu">Company</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item">
+                <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
+                  <span class="d-flex">
+                    <i class="ti ti-user"></i>
+                  </span>
+                  <span class="hide-menu">Course</span>
+                </a>
+                <ul aria-expanded="false" class="collapse first-level">
+
+                  <li class="sidebar-item">
+                    <a href="course-adding" class="sidebar-link">
+                      <div class="round-16 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-circle"></i>
+                      </div>
+                      <span class="hide-menu">Upload Video</span>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-item">
+                    <a href="add-questions" class="sidebar-link">
+                      <div class="round-16 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-circle"></i>
+                      </div>
+                      <span class="hide-menu">Upload Questions</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+
+
 
             </ul>
            
