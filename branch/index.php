@@ -51,9 +51,7 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">User Manual Adding</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional content.
-            </p>
+        
             <button class="btn me-1 mb-1 btn-light-danger text-danger btn-lg px-4 fs-4 font-medium"
               data-bs-toggle="modal" data-bs-target="#user-adding">
               Add User
@@ -144,9 +142,7 @@
 
           <div class="card-body">
             <h5 class="card-title">User Adding Via Excel</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional content.
-            </p>
+       
             <button class="btn me-1 mb-1 btn-light-success text-success btn-lg px-4 fs-4 font-medium"
               data-bs-toggle="modal" data-bs-target="#user-excel-adding">
               Add User
