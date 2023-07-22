@@ -193,7 +193,9 @@
 
     <div class="card">
       <div class="card-body">
-
+        <div class="mb-2">
+          <h3 class="mb-0">User Details</h3>
+      </div>
         <div class="table-responsive">
           <div id="zero_config_wrapper" class="dataTables_wrapper">
             <div id="zero_config_wrapper" class="dataTables_wrapper no-footer">

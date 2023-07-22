@@ -29,7 +29,7 @@
 
         <div class="card">
             <div class="card-body">
-                <ul class="nav nav-pills user-profile-tab justify-content-end mt-2 bg-light-info rounded-2"
+                <ul class="nav nav-pills user-profile-tab justify-content-end mt-2"
                     id="pills-tab" role="tablist">
 
                     <li class="nav-item" role="presentation">
