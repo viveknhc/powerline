@@ -55732,7 +55732,7 @@ ul {
 
 /* SIDE BAR */
 
-.sidebar-nav{
+/* .sidebar-nav{
     background-color: #2e3193 !important;
 }
 
@@ -55747,4 +55747,31 @@ ul {
 
 .simplebar-content{
     padding: 20px 24px !important;
+} */
+
+
+.welcome-img{
+    max-width: 49%;
 }
+
+@media only screen and (max-width: 600px) {
+    .welcome-img{
+        max-width: 100%;
+    }
+  }
+
+/*  */
+
+  .table-responsive {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on touch devices */
+  }
+  
+  /* Customizing the scrollbar */
+  .table-responsive::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .table-responsive::-webkit-scrollbar-thumb {
+    background-color: #2e31919c;
+  }

@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-3">
                         <div class="text-center mb-n5">
-                            <img src="assets/images/breadcrumb/ChatBc.png" alt="" class="img-fluid mb-n4">
+                            <img src="assets/imag" alt="" class="img-fluid mb-n4">
                         </div>
                     </div>
                 </div>
@@ -30,15 +30,15 @@
 
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Upload Video</label>
-                                <input type="file" class="form-control">
+                                <label class="form-label">Upload Video</label>
+                                <input type="url" class="form-control">
                             </div>
                         </div>
 
 
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Catagory</label>
+                                <label class="form-label">Catagory</label>
 
                                 <select class="select2 form-control select2-hidden-accessible"
                                     style="width: 100%; height: 36px" data-select2-id="select2-data-1-nn1h"
@@ -58,14 +58,14 @@
 
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Video Class name</label>
+                                <label class="form-label">Video Class name</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
 
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Description</label>
+                                <label class="form-label">Description</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>

@@ -53,6 +53,32 @@
                   <span class="hide-menu text-white">My Courses</span>
                 </a>
               </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="user-profile" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-user text-white"></i>
+                  </span>
+                  <span class="hide-menu text-white">Profile</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="download-certificate" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture text-white"></i>
+                  </span>
+                  <span class="hide-menu text-white">Download Certificate</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="manage-certificate" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture text-white"></i>
+                  </span>
+                  <span class="hide-menu text-white">Manage Certificate</span>
+                </a>
+              </li>
 
             </ul>
            

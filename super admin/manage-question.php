@@ -56,9 +56,7 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade active show" id="pills-profile" role="tabpanel"
                         aria-labelledby="pills-profile-tab" tabindex="0">
-                        <div>
-<h1>fdgdgfd</h1>
-                        </div>
+
                         <div class="table-responsive">
                             <div id="zero_config_wrapper" class="dataTables_wrapper">
                                 <table id="zero_config" class="table border  table-bordered text-nowrap dataTable"
@@ -141,6 +139,13 @@
 
                         <form action="" class="pt-5">
                             <div class="row">
+
+                                <div class="col-lg-12 pb-3">
+                                    <label for="" class="form-label">Upload Excel (optional)</label>
+                                    <input class="form-control" type="file" name="" id="">
+                                </div>
+
+
                                 <div class="col-lg-12 pb-3">
                                     <label class="form-label" for="">Question</label>
                                     <textarea class="form-control" cols="30" type="text"></textarea>

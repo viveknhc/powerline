@@ -36,16 +36,27 @@
                                     <th class="sorting sorting_asc" tabindex="0" aria-controls="zero_config" rowspan="1"
                                         colspan="1" aria-sort="ascending"
                                         aria-label="Name: activate to sort column descending" style="width: 155.391px;">
-                                        Name</th>
+                                        Employee Id</th>
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
                                         aria-label="Position: activate to sort column ascending"
-                                        style="width: 257.406px;">Position</th>
+                                        style="width: 257.406px;">Name</th>
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
                                         aria-label="Office: activate to sort column ascending"
-                                        style="width: 115.703px;">Office</th>
-                                    <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
-                                        aria-label="Age: activate to sort column ascending" style="width: 46.125px;">Age
-                                    </th>
+                                        style="width: 115.703px;">Email</th>
+                                        <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 115.703px;">Phone</th>
+
+                                        <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 115.703px;">Address</th>
+
+                                        <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 115.703px;">Passport Number</th>
+
+
+                                 
                                     <th class="sorting" tabindex="0" aria-controls="zero_config" rowspan="1" colspan="1"
                                         aria-label="Start date: activate to sort column ascending"
                                         style="width: 106.969px;">Status</th>
@@ -56,10 +67,12 @@
                             </thead>
                             <tbody>
                                 <tr class="odd">
-                                    <td class="sorting_1">Airi Satou</td>
-                                    <td>Accountant</td>
+                                    <td class="sorting_1">EMP01</td>
+                                    <td>Murshid</td>
+                                    <td>abc@ahs.com</td>
+                                    <td>983646xxx</td>
                                     <td>Tokyo</td>
-                                    <td>33</td>
+                                    <td>PS67676</td>
                                     <td><button type="button"
                                             class="btn mb-1 waves-effect waves-light btn-rounded btn-outline-success">
                                             Active
@@ -76,10 +89,12 @@
                                     </td>
                                 </tr>
                                 <tr class="even">
-                                    <td class="sorting_1">Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
+                                    <td class="sorting_1">EMP02</td>
+                                    <td>Sharon</td>
+                                    <td>abc@ahs.com</td>
+                                    <td>983646xxx</td>
+                                    <td>calicut</td>
+                                    <td>PS67676</td>
                                     <td><button type="button"
                                             class="btn mb-1 waves-effect waves-light btn-rounded btn-outline-danger">
                                             Suspend
@@ -101,8 +116,12 @@
                         </table>
                     </div>
                 </div>
+                
             </div>
         </div>
+
+
+
 
 
     </div>
