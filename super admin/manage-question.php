@@ -14,11 +14,13 @@
                         <h4 class="fw-semibold mb-8">Manage Questions</h4>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="index">Dashboard</a></li>
-                              <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="add-questions">Question adding</a></li>
-                              <li class="breadcrumb-item" aria-current="page">Manage Question</li>
+                                <li class="breadcrumb-item"><a class="text-muted text-decoration-none"
+                                        href="index">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a class="text-muted text-decoration-none"
+                                        href="add-questions">Question adding</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Manage Question</li>
                             </ol>
-                          </nav>
+                        </nav>
                     </div>
                     <div class="col-3">
                         <div class="text-center mb-n5">
@@ -36,8 +38,7 @@
 
         <div class="card">
             <div class="card-body">
-                <ul class="nav nav-pills user-profile-tab justify-content-end mt-2"
-                    id="pills-tab" role="tablist">
+                <ul class="nav nav-pills user-profile-tab justify-content-end mt-2" id="pills-tab" role="tablist">
 
                     <li class="nav-item" role="presentation">
                         <button
@@ -61,6 +62,7 @@
 
 
                 <div class="tab-content" id="pills-tabContent">
+
                     <div class="tab-pane fade active show" id="pills-profile" role="tabpanel"
                         aria-labelledby="pills-profile-tab" tabindex="0">
 
@@ -143,16 +145,17 @@
                     </div>
                     <div class="tab-pane fade" id="pills-followers" role="tabpanel"
                         aria-labelledby="pills-followers-tab" tabindex="0">
+                        <div class="text-end pt-5">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#upload-excel"
+                                class="btn  btn-danger">
+                                <i class="ti ti-receipt fs-4 me-2"></i>
+                                Uplad Excel
+                            </button>
 
+                            <!-- <button class="btn btn-light-success" data-bs-toggle="modal" data-bs-target="#user-edit">Upload Excel</button> -->
+                        </div>
                         <form action="" class="pt-5">
                             <div class="row">
-
-                                <div class="col-lg-12 pb-3">
-                                    <label for="" class="form-label">Upload Excel (optional)</label>
-                                    <input class="form-control" type="file" name="" id="">
-                                </div>
-
-
                                 <div class="col-lg-12 pb-3">
                                     <label class="form-label" for="">Question</label>
                                     <textarea class="form-control" cols="30" type="text"></textarea>
@@ -363,6 +366,52 @@
     </div>
 
 </div>
+
+
+
+<!-- QUESTION EDIT MODAL -->
+
+<div class="modal fade" id="upload-excel" tabindex="-1" aria-labelledby="bs-example-modal-lg" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header d-flex align-items-center">
+                <h4 class="modal-title" id="myLargeModalLabel">
+                    Upload question
+                </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-12 pb-3">
+                            <label class="form-label" for="">question</label>
+                            <input type="file" class="form-control">
+                        </div>
+
+
+
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary text-primary font-medium waves-effect text-start">
+                    Update
+                </button>
+
+                <button type="button" class="btn btn-light-danger text-danger font-medium waves-effect text-start"
+                    data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 
 
 

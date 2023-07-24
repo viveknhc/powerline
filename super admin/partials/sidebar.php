@@ -120,12 +120,7 @@
                   </li>
                 </ul>
               </li>
-
-
-
-
             </ul>
-           
           </nav>
           <div class="fixed-profile p-3 bg-light-secondary rounded sidebar-ad mt-3">
             <div class="hstack gap-3">
