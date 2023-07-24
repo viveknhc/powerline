@@ -136,7 +136,7 @@
 </div>
 
 
-<?php include 'partials/copy-right.php';?>
+
 <!-- EDIT MODAL -->
 
 <div class="modal fade" id="user-edit" tabindex="-1" aria-labelledby="bs-example-modal-lg" aria-hidden="true">
