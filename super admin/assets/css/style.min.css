@@ -55691,8 +55691,8 @@ ul {
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: .3;
-    background: radial-gradient(#d2f1df, #d3d7fa, #bad8f4) 0 0/400% 400%;
+    opacity: .7;
+    background: radial-gradient(#41abe3, #41aae2, #2e3192) 0 0/400% 400%;
     animation: 15s ease 0s infinite normal none running gradient
 }
 
