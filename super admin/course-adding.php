@@ -11,7 +11,12 @@
                 <div class="row align-items-center">
                     <div class="col-9">
                         <h4 class="fw-semibold mb-8">Course Adding</h4>
-
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="index">Dashboard</a></li>
+                              <li class="breadcrumb-item" aria-current="page">Course adding</li>
+                            </ol>
+                          </nav>
                     </div>
                     <div class="col-3">
                         <div class="text-center mb-n5">

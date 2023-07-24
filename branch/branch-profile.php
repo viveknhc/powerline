@@ -5,29 +5,10 @@
   <?php include 'partials/navbar.php';?>
   <div class="container-fluid">
 
-    <div class="card bg-light-info shadow-none position-relative overflow-hidden">
-      <div class="card-body px-4 py-3">
-        <div class="row align-items-center">
-          <div class="col-9">
-            <h4 class="fw-semibold mb-8">Branch Profile</h4>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-muted " href="index">Dashboard</a></li>
-                <li class="breadcrumb-item" aria-current="page">User Profile</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="col-3">
-            <div class="text-center mb-n5">
-              <img src="assets/images/breadcrumb/ChatBc.png" alt="" class="img-fluid mb-n4">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="card overflow-hidden">
       <div class="card-body p-0">
-        <img src="assets/images/backgrounds/profilebg.jpg" alt="" class="img-fluid">
+        <img src="assets/images/progilebg.png" alt="" class="img-fluid">
         <div class="row align-items-center">
 
           <div class="col-lg-4 mt-n3 order-lg-2 order-1">

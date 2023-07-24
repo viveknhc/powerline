@@ -8,13 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="handheldfriendly" content="true" />
     <meta name="MobileOptimized" content="width" />
-    <meta name="description" content="Mordenize" />
+    <meta name="description" content="." />
     <meta name="author" content="" />
-    <meta name="keywords" content="Mordenize" />
+    <meta name="keywords" content="." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--  Favicon -->
-    <link rel="shortcut icon" type="image/png" href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" />
-    <!-- Core Css -->
+
     <link  id="themeColors"  rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body>
@@ -29,13 +27,13 @@
                 <img class="login-logo" src="assets/images/logo/logo-small.png" width="180" alt="">
               </a>
               <div class="d-none d-xl-flex align-items-center justify-content-center" style="height: calc(100vh - 80px);">
-                <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/backgrounds/login-security.svg" alt="" class="img-fluid" width="500">
+                <img src="assets/images/login.png" alt="" class="img-fluid" width="500">
               </div>
             </div>
             <div class="col-xl-5 col-xxl-4">
               <div class="authentication-login min-vh-100 bg-body row justify-content-center align-items-center p-4">
                 <div class="col-sm-8 col-md-6 col-xl-9">
-                  <h2 class="mb-3 fs-7 fw-bolder">Welcome to <br> Power Line Solutions</h2>
+                  <h2 class="mb-3 fs-7 fw-bolder text-center text-capitalize">Branch Login</h2>
                
                   <form>
                     <div class="mb-3">

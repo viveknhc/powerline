@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="handheldfriendly" content="true" />
     <meta name="MobileOptimized" content="width" />
-    <meta name="description" content="Mordenize" />
+    <meta name="description" content="." />
     <meta name="author" content="" />
-    <meta name="keywords" content="Mordenize" />
+    <meta name="keywords" content="." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <link rel="stylesheet" href="assets/libs/prismjs/themes/prism-okaidia.min.css"> -->
     <link rel="stylesheet" href="assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">

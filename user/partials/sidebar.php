@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="handheldfriendly" content="true" />
     <meta name="MobileOptimized" content="width" />
-    <meta name="description" content="Mordenize" />
+    <meta name="description" content="." />
     <meta name="author" content="" />
-    <meta name="keywords" content="Mordenize" />
+    <meta name="keywords" content="." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <link rel="stylesheet" href="assets/libs/prismjs/themes/prism-okaidia.min.css"> -->
     <link  id="themeColors"  rel="stylesheet" href="assets/css/style.min.css" />
@@ -48,35 +48,45 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="index" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture text-white"></i>
+                    <i class="ti ti-aperture"></i>
                   </span>
-                  <span class="hide-menu text-white">My Courses</span>
+                  <span class="hide-menu">Dashboard</span>
                 </a>
               </li>
+
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="video-class" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Classroom</span>
+                </a>
+              </li>
+
               <li class="sidebar-item">
                 <a class="sidebar-link" href="user-profile" aria-expanded="false">
                   <span>
-                    <i class="ti ti-user text-white"></i>
+                    <i class="ti ti-user "></i>
                   </span>
-                  <span class="hide-menu text-white">Profile</span>
+                  <span class="hide-menu ">Profile</span>
                 </a>
               </li>
 
               <li class="sidebar-item">
                 <a class="sidebar-link" href="download-certificate" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture text-white"></i>
+                    <i class="ti ti-aperture "></i>
                   </span>
-                  <span class="hide-menu text-white">Download Certificate</span>
+                  <span class="hide-menu ">Download Certificate</span>
                 </a>
               </li>
 
               <li class="sidebar-item">
                 <a class="sidebar-link" href="manage-certificate" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture text-white"></i>
+                    <i class="ti ti-aperture "></i>
                   </span>
-                  <span class="hide-menu text-white">Manage Certificate</span>
+                  <span class="hide-menu ">Manage Certificate</span>
                 </a>
               </li>
 
