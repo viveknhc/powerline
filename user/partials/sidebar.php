@@ -81,14 +81,7 @@
                 </a>
               </li>
 
-              <li class="sidebar-item">
-                <a class="sidebar-link" href="manage-certificate" aria-expanded="false">
-                  <span>
-                    <i class="ti ti-aperture "></i>
-                  </span>
-                  <span class="hide-menu ">Manage Certificate</span>
-                </a>
-              </li>
+
 
             </ul>
            

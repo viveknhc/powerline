@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML to PDF Conversion</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.3-beta1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div id="pdfContent">
+    <!-- Your HTML content that you want to convert to PDF -->
+    <h1>Hello, PDF!</h1>
+    <p>This is an example HTML content to convert to PDF.</p>
+  </div>
+
+  <!-- Add a button for downloading the PDF -->
+  <button id="downloadButton">Download PDF</button>
+
+  <script>
+    // Function to convert HTML to PDF
+    function convertHTMLToPDF() {
+      const pdfContent = document.getElementById('pdfContent');
+
+      // Use html2canvas to render the HTML content to a canvas
+      html2canvas(pdfContent).then((canvas) => {
+        // Convert canvas to an image data URL
+        const imgData = canvas.toDataURL('image/png');
+
+        // Calculate the PDF page size based on the content size
+        const pdf = new jsPDF({
+          unit: 'px',
+          format: [canvas.width, canvas.height]
+        });
+
+        // Add the image data URL to the PDF
+        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+
+        // Save the PDF
+        pdf.save('converted.pdf');
+      });
+    }
+
+    // Add event listener to the download button
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', convertHTMLToPDF);
+  </script>
+</body>
+</html>

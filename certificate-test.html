@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Download Div Content as PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .certificate {
+            position: relative; 
+            background-image: url('./user/assets/images/certificate-frame.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <div class="certificate d-flex justify-content-center align-items-center" id="content">
+        <h1 style="color: red;">Hello</h1>
+        <div>
+            <h1 style="color: red;">fgdfgff</h1>
+        </div>
+    </div>
+
+    <button id="downloadButton">Download as PDF</button>
+
+
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function () {
+            // Get the content of the div
+            const divContent = document.getElementById('content');
+
+            // Set the options for pdf conversion
+            const options = {
+                margin: 10,
+                filename: 'content.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // Generate the PDF
+            html2pdf().from(divContent).set(options).save();
+        });
+    </script>
+</body>
+
+</html>

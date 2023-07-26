@@ -6,19 +6,14 @@
   <?php include 'partials/navbar.php';?>
 
   <div class="container-fluid">
-
-
-
-
   <div class="row">
     <div class="col-lg-6">
     <div class="">
         <div class="card">
-         
           <div class="card-body">
             <h5 class="card-title">User Manual Adding</h5>
             <p class="card-text">
-              With supporting text below as a natural lead-in to additional content.
+              Here upload the user details with manual typing
             </p>
             <button class="btn me-1 mb-1 btn-light-danger text-danger btn-lg px-4 fs-4 font-medium"
                   data-bs-toggle="modal" data-bs-target="#user-adding">
@@ -114,7 +109,7 @@
           <div class="card-body">
             <h5 class="card-title">User Adding Via Excel</h5>
             <p class="card-text">
-              With supporting text below as a natural lead-in to additional content.
+              Its and easy method ,you can just upload the details of users
             </p>
             <button class="btn me-1 mb-1 btn-light-success text-success btn-lg px-4 fs-4 font-medium"
                   data-bs-toggle="modal" data-bs-target="#user-excel-adding">
