@@ -120,6 +120,16 @@
                   </li>
                 </ul>
               </li>
+
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="certificte-upload" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-settings"></i>
+                  </span>
+                  <span class="hide-menu">Certificate Settings</span>
+                </a>
+              </li>
+        
             </ul>
           </nav>
           <div class="fixed-profile p-3 bg-light-secondary rounded sidebar-ad mt-3">

@@ -57,7 +57,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="video-class" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture"></i>
+                    <i class="ti ti-palette"></i>
                   </span>
                   <span class="hide-menu">Classroom</span>
                 </a>
@@ -75,7 +75,7 @@
               <li class="sidebar-item">
                 <a class="sidebar-link" href="download-certificate" aria-expanded="false">
                   <span>
-                    <i class="ti ti-aperture "></i>
+                    <i class="ti ti-note"></i>
                   </span>
                   <span class="hide-menu ">Download Certificate</span>
                 </a>

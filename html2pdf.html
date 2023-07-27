@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HTML to PDF Conversion</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.3-beta1/html2canvas.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <title>Input Box and Image Upload</title>
 </head>
 <body>
-  <div id="pdfContent">
-    <!-- Your HTML content that you want to convert to PDF -->
-    <h1>Hello, PDF!</h1>
-    <p>This is an example HTML content to convert to PDF.</p>
-  </div>
+    <label for="inputText">Type something:</label>
+    <input type="text" id="inputText" oninput="updateParagraph()">
+    <br>
 
-  <!-- Add a button for downloading the PDF -->
-  <button id="downloadButton">Download PDF</button>
+    <label for="imageUpload">Upload an Image:</label>
+    <input type="file" id="imageUpload" onchange="displayImage()">
+    <br>
 
-  <script>
-    // Function to convert HTML to PDF
-    function convertHTMLToPDF() {
-      const pdfContent = document.getElementById('pdfContent');
+    <label for="inputText2">Type something else:</label>
+    <input type="text" id="inputText2" oninput="updateParagraph2()">
+    <br>
 
-      // Use html2canvas to render the HTML content to a canvas
-      html2canvas(pdfContent).then((canvas) => {
-        // Convert canvas to an image data URL
-        const imgData = canvas.toDataURL('image/png');
+    <p id="displayText"></p>
+    <img id="displayImage" src="#" alt="Uploaded Image" style="max-width: 300px; display: none;">
+    <p id="displayText2"></p>
 
-        // Calculate the PDF page size based on the content size
-        const pdf = new jsPDF({
-          unit: 'px',
-          format: [canvas.width, canvas.height]
-        });
+    <script>
+        function updateParagraph() {
+            var inputBox = document.getElementById("inputText");
+            var displayParagraph = document.getElementById("displayText");
+            displayParagraph.innerText = inputBox.value;
+        }
 
-        // Add the image data URL to the PDF
-        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+        function displayImage() {
+            var imageInput = document.getElementById("imageUpload");
+            var displayImage = document.getElementById("displayImage");
 
-        // Save the PDF
-        pdf.save('converted.pdf');
-      });
-    }
+            if (imageInput.files && imageInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    displayImage.src = e.target.result;
+                    displayImage.style.display = "inline"; // Show the image
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            }
+        }
 
-    // Add event listener to the download button
-    const downloadButton = document.getElementById('downloadButton');
-    downloadButton.addEventListener('click', convertHTMLToPDF);
-  </script>
+        function updateParagraph2() {
+            var inputBox2 = document.getElementById("inputText2");
+            var displayParagraph2 = document.getElementById("displayText2");
+            displayParagraph2.innerText = inputBox2.value;
+        }
+    </script>
 </body>
 </html>

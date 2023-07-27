@@ -9,18 +9,24 @@
 <body>
     <style>
         .certificate {
-            position: relative; 
-            background-image: url('./user/assets/images/certificate-frame.jpg');
+            position: relative;
+            height: 646px;
+            background-image: url('../user/assets/images/certificate-frame.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
             background-size: cover;
         }
     </style>
+    
+    <div class="card">
+        <div class="card-body">
+            <div class="certificate d-flex justify-content-center align-items-center" id="content">
+                <h1 style="color: red;">Hello</h1>
+                <div>
+                    <h1 style="color: red;">fgdfgff</h1>
+                </div>
+            </div>
 
-    <div class="certificate d-flex justify-content-center align-items-center" id="content">
-        <h1 style="color: red;">Hello</h1>
-        <div>
-            <h1 style="color: red;">fgdfgff</h1>
         </div>
     </div>
 
@@ -38,13 +44,15 @@
                 filename: 'content.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
             };
 
             // Generate the PDF
             html2pdf().from(divContent).set(options).save();
         });
     </script>
+
+
 </body>
 
 </html>
