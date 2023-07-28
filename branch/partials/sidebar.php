@@ -13,7 +13,7 @@
     <meta name="keywords" content="." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <link rel="stylesheet" href="assets/libs/prismjs/themes/prism-okaidia.min.css"> -->
-    <link rel="stylesheet" href="assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/libs/datatables.net-bs5/dataTables.bootstrap5.min.css">
     <link  id="themeColors"  rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body>

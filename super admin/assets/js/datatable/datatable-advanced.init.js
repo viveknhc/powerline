@@ -1,13 +1,4 @@
-/*************************************************************************************/
-// -->Template Name: Bootstrap Press Admin
-// -->Author: Themedesigner
-// -->Email: niravjoshi87@gmail.com
-// -->File: datatable_advanced_init
-/*************************************************************************************/
 
-//=============================================//
-//    File export                              //
-//=============================================//
 $("#file_export").DataTable({
   dom: "Bfrtip",
   buttons: ["copy", "csv", "excel", "pdf", "print"],
