@@ -122,7 +122,7 @@
               </li>
 
               <li class="sidebar-item">
-                <a class="sidebar-link" href="certificte-upload" aria-expanded="false">
+                <a class="sidebar-link" href="certificate-settings" aria-expanded="false">
                   <span>
                     <i class="ti ti-settings"></i>
                   </span>

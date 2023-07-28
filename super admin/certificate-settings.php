@@ -11,6 +11,27 @@
 
     <div class="container-fluid">
 
+        <div class="card bg-light-info shadow-none position-relative overflow-hidden">
+            <div class="card-body px-4 py-3">
+                <div class="row align-items-center">
+                    <div class="col-9">
+                        <h4 class="fw-semibold mb-8">Certificate settings</h4>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="text-muted text-decoration-none"
+                                        href="index">Dashboard</a></li>
+                                <li class="breadcrumb-item" aria-current="page">certificate settings</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-3">
+                        <div class="text-center mb-n5">
+                            <img src="assets/images/breadcrumb.png" alt="" class="img-fluid mb-n4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="card">
@@ -22,6 +43,9 @@
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
                                 <label class="form-label">Qr Code</label>
+                                <p class="mb-3 card-subtitle">
+                                   add qrcode
+                                </p>
                                 <input id="qrcodeId" oninput="qrcode()" type="file" class="form-control">
                             </div>
                         </div>
@@ -30,6 +54,9 @@
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
                                 <label class="form-label">Signed By</label>
+                                <p class="mb-3 card-subtitle">
+                                    write the name of the person who signed the certificate
+                                 </p>
                                 <input id="signedBy" oninput="signedByName()" type="text" class="form-control">
                             </div>
                         </div>
@@ -37,6 +64,7 @@
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
                                 <label class="form-label">Designation</label>
+                                <p  class="mb-3 card-subtitle">Designation of th person who signed the certificate</p>
                                 <input id="designationId" oninput="designation()" type="text" class="form-control">
                             </div>
                         </div>
@@ -44,6 +72,9 @@
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
                                 <label class="form-label">Signature</label>
+                                <p class="mb-3 card-subtitle">
+                                    upload the image of signature 
+                                 </p>
                                 <input id="signatureId" oninput="signature()" type="file" class="form-control">
                             </div>
                         </div>
@@ -51,7 +82,10 @@
 
                         <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                                <label class="form-label">Copany Logo</label>
+                                <label class="form-label">Company Logo</label>
+                                <p class="mb-3 card-subtitle">
+                                  upload image of company logo
+                                 </p>
                                 <input id="companyLogoId" oninput="companyLogo()" type="file" class="form-control">
                             </div>
                         </div>
@@ -71,7 +105,7 @@
         </div>
 
 
-        <div class="container card ">
+        <div class="container card d-lg-block d-xl-block d-sm-none d-md-none d-none">
             <div class="card-body">
                 <div id="content" class="certificate">
 
@@ -230,9 +264,6 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
                 <script>
-
-
-
                     function signedByName() {
                         var signedName = document.getElementById("signedBy");
                         console.log(signedBy)
@@ -295,24 +326,7 @@
 
                 </script>
 
-                <script>
-                    document.getElementById('downloadButton').addEventListener('click', function () {
-                        // Get the content of the div
-                        const divContent = document.getElementById('content');
 
-                        // Set the options for pdf conversion
-                        const options = {
-                            margin: 10,
-                            filename: 'content.pdf',
-                            image: { type: 'jpeg', quality: 0.98 },
-                            html2canvas: { scale: 2 },
-                            jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
-                        };
-
-                        // Generate the PDF
-                        html2pdf().from(divContent).set(options).save();
-                    });
-                </script>
 
             </div>
 

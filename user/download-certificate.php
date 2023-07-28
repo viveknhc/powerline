@@ -8,6 +8,15 @@
     <?php include 'partials/navbar.php';?>
     <div class="container-fluid">
         <style>
+            @media (max-width: 767px) {
+                .certificate {
+                    opacity: 1;
+                }
+                .download-alert {
+                    color: red;
+                }
+            }
+
             .certificate {
                 position: relative;
                 height: 646px;
@@ -99,7 +108,6 @@
 
             .downloadbtn {
                 background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
-             
                 text-transform: uppercase;
                 transition: 0.5s;
                 background-size: 200% auto;
@@ -111,19 +119,23 @@
 
             .downloadbtn:hover {
                 background-position: right center;
-             
                 color: #fff;
                 text-decoration: none;
+
             }
         </style>
 
-        <div class="text-center py-2">
-            <button class="btn downloadbtn" id="downloadButton"> Download Now <i class="ti ti-download ms-2"></i></button>
+        <div class="d-flex justify-content-center py-2">
+            <button class="btn downloadbtn d-lg-block d-sm-none d-md-none d-xl-block d-none" id="downloadButton"> Download Now <i
+                    class="ti ti-download ms-2"></i></button>
         </div>
 
         <div class="container card ">
             <div class="card-body">
-                <div id="content" class="certificate">
+                <div>
+                    <p class="download-alert d-lg-none d-sm-block d-xl-none d-md-none d-xxl-none d-block">*Certificate is only available in desktop screen</p>
+                </div>
+                <div id="content" class="certificate d-lg-block d-sm-none d-md-none d-xl-block d-none">
                     <div class="text-center heading-box">
                         <h2>CERTIFICATE</h2>
                         <h6>OF TRAINING COMPLETION</h6>

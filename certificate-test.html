@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Download Div Content as PDF</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
-
 <body>
     <style>
+
         .certificate {
             position: relative;
             height: 646px;
@@ -16,22 +15,32 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        @media (max-width: 767px) {
+            .certificate {
+              height: 217px;
+              background-color: red;
+            }
+        }
+
+        
+
     </style>
     
     <div class="card">
         <div class="card-body">
+            <!-- The certificate content is hidden on phone screens -->
             <div class="certificate d-flex justify-content-center align-items-center" id="content">
                 <h1 style="color: red;">Hello</h1>
                 <div>
                     <h1 style="color: red;">fgdfgff</h1>
                 </div>
             </div>
-
         </div>
     </div>
 
+    <!-- The download button is always visible -->
     <button id="downloadButton">Download as PDF</button>
-
 
     <script>
         document.getElementById('downloadButton').addEventListener('click', function () {
@@ -51,8 +60,5 @@
             html2pdf().from(divContent).set(options).save();
         });
     </script>
-
-
 </body>
-
 </html>
