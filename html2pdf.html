@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Input Box and Image Upload</title>
+  <title>Convert to PDF</title>
+  <!-- Include jsPDF library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <label for="inputText">Type something:</label>
-    <input type="text" id="inputText" oninput="updateParagraph()">
-    <br>
+  <div id="printable-content">
+    <!-- The content you want to convert to PDF -->
+    <h1>Hello, world!</h1>
+    <p>This is the content to be converted to PDF.</p>
+  </div>
+  <button id="convert-button">Convert to PDF</button>
 
-    <label for="imageUpload">Upload an Image:</label>
-    <input type="file" id="imageUpload" onchange="displayImage()">
-    <br>
+  <script>
+    document.getElementById("convert-button").addEventListener("click", function() {
+      // Create a new jsPDF instance
+      var doc = new jsPDF();
 
-    <label for="inputText2">Type something else:</label>
-    <input type="text" id="inputText2" oninput="updateParagraph2()">
-    <br>
+      // Get the printable area element
+      var printableArea = document.getElementById("printable-content");
 
-    <p id="displayText"></p>
-    <img id="displayImage" src="#" alt="Uploaded Image" style="max-width: 300px; display: none;">
-    <p id="displayText2"></p>
+      // Convert the printable area to a data URL
+      domtoimage.toPng(printableArea)
+        .then(function(dataUrl) {
+          // Add the image (PNG) of the printable area to the PDF
+          doc.addImage(dataUrl, "PNG", 10, 10, 190, 100); // Adjust the position and size as needed
 
-    <script>
-        function updateParagraph() {
-            var inputBox = document.getElementById("inputText");
-            var displayParagraph = document.getElementById("displayText");
-            displayParagraph.innerText = inputBox.value;
-        }
-
-        function displayImage() {
-            var imageInput = document.getElementById("imageUpload");
-            var displayImage = document.getElementById("displayImage");
-
-            if (imageInput.files && imageInput.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    displayImage.src = e.target.result;
-                    displayImage.style.display = "inline"; // Show the image
-                };
-                reader.readAsDataURL(imageInput.files[0]);
-            }
-        }
-
-        function updateParagraph2() {
-            var inputBox2 = document.getElementById("inputText2");
-            var displayParagraph2 = document.getElementById("displayText2");
-            displayParagraph2.innerText = inputBox2.value;
-        }
-    </script>
+          // Save the PDF
+          doc.save("converted.pdf");
+        })
+        .catch(function(error) {
+          console.error("Error converting to PDF:", error);
+        });
+    });
+  </script>
 </body>
 </html>
