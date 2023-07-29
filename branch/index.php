@@ -51,11 +51,14 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">User Manual Adding</h5>
-        
+
             <button class="btn me-1 mb-1 btn-light-danger text-danger btn-lg px-4 fs-4 font-medium"
               data-bs-toggle="modal" data-bs-target="#user-adding">
               Add User
             </button>
+
+
+            <!-- ADD USER IN MANUAL -->
 
             <div class="modal fade" id="user-adding" tabindex="-1" aria-labelledby="bs-example-modal-lg"
               aria-hidden="true">
@@ -69,56 +72,60 @@
                   </div>
                   <div class="modal-body">
 
-                    <form>
+                    <form id="add-user-form">
                       <div class="row">
                         <div class="col-lg-6 pb-3">
                           <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label">Employee Id</label>
-                            <input type="number" class="form-control">
+                            <label class="form-label">Employee Id</label>
+                            <input name="empId" id="empId" type="number" class="form-control">
                           </div>
                         </div>
 
                         <div class="col-lg-6 pb-3">
                           <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label">Name</label>
-                            <input type="text" class="form-control">
+                            <label class="form-label">Name</label>
+                            <input name="name" id="name" type="text" class="form-control">
                           </div>
                         </div>
 
                         <div class="col-lg-6 pb-3">
                           <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control">
+                            <label class="form-label">Email</label>
+                            <input name="email" id="email" type="email" class="form-control">
                           </div>
                         </div>
 
                         <div class="col-lg-6 pb-3">
                           <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                            <input type="number" class="form-control">
+                            <label class="form-label">Phone Number</label>
+                            <input name="phone" id="phone" type="number" class="form-control">
                           </div>
                         </div>
 
                         <div class="col-lg-6 pb-3">
                           <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label">Address</label>
-                            <input type="address" class="form-control">
+                            <label class="form-label">Address</label>
+                            <input name="address" id="address" type="address" class="form-control">
                           </div>
                         </div>
 
                         <div class="col-lg-6 pb-3">
                           <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label">Passport Number</label>
-                            <input type="Number" class="form-control">
+                            <label class="form-label">Passport Number</label>
+                            <input name="passportNumber" id="passportNumber" type="Number" class="form-control">
                           </div>
                         </div>
                       </div>
+
+                      <!-- <div class="div">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                      </div> -->
 
                     </form>
 
                   </div>
                   <div class="modal-footer">
-                    <button type="button"
+                    <button id="adduser-btn" type="submit"
                       class="btn btn-light-primary text-primary font-medium waves-effect text-start">
                       Submit
                     </button>
@@ -129,9 +136,8 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.modal-content -->
               </div>
-              <!-- /.modal-dialog -->
+
             </div>
           </div>
         </div>
@@ -142,7 +148,7 @@
 
           <div class="card-body">
             <h5 class="card-title">User Adding Via Excel</h5>
-       
+
             <button class="btn me-1 mb-1 btn-light-success text-success btn-lg px-4 fs-4 font-medium"
               data-bs-toggle="modal" data-bs-target="#user-excel-adding">
               Add User
@@ -160,14 +166,15 @@
                   </div>
                   <div class="modal-body">
 
-                    <div class="custom-file container">
-                      <input type="file" class="form-control" required="">
-
-                    </div>
-
+                    <form id="excel-addUser" action="">
+                      <div class="custom-file container">
+                        <input name="excelDoc" type="file" class="form-control" required="">
+                      </div>
+                    </form>
                   </div>
+                  
                   <div class="modal-footer">
-                    <button type="button"
+                    <button type="button" id="addUser-excelbtn"
                       class="btn btn-light-primary text-primary font-medium waves-effect text-start">
                       Submit
                     </button>
@@ -177,9 +184,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.modal-content -->
               </div>
-              <!-- /.modal-dialog -->
             </div>
           </div>
         </div>
@@ -191,11 +196,11 @@
       <div class="card-body">
         <div class="mb-2">
           <h3 class="mb-0">User Details</h3>
-      </div>
+        </div>
         <div class="table-responsive">
           <div id="zero_config_wrapper" class="dataTables_wrapper">
             <div id="zero_config_wrapper" class="dataTables_wrapper no-footer">
-      
+
 
               <table id="zero_config" class="table border table-bordered text-nowrap dataTable no-footer"
                 aria-describedby="zero_config_info">
@@ -273,7 +278,7 @@
                 </tbody>
 
               </table>
-         
+
             </div>
           </div>
         </div>

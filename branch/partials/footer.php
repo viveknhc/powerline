@@ -263,10 +263,14 @@
     <script src="assets/js/sidebarmenu.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/dashboard.js"></script>
-    
+     
     <!-- DATA TABLE -->
     <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/datatable/datatable-basic.init.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="assets/js/form-validation.js"></script> 
     
     <!-- <script src="assets/libs/prismjs/prism.js"></script>
     <script src="assets/libs/jquery-steps/build/jquery.steps.min.js"></script>

@@ -55776,4 +55776,9 @@ ul {
     background-color: #2e31919c;
   }
 
+/* FORM VALIDATION */
 
+  .error{
+    color: red;
+    
+  }

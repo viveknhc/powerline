@@ -66,24 +66,25 @@
           <div class="col-lg-7">
             <div class="card">
               <div class="card-body">
-                <form class="mt-4">
+
+                <form id="profileEdit" class="mt-4">
                   <div class="form-group form-box">
                     <label id="form-label" class="form-label">Name</label>
-                    <input type="text" id="form-input" class="form-control">
+                    <input type="text" id="name" class="form-control" name="name">
+                    <p  id="name-error" class="error" for="name"></p>
 
                     <label id="form-label" class="form-label">Email</label>
-                    <input type="text" id="form-input" class="form-control">
-
+                    <input type="email" id="email" class="form-control" name="email">
+                    <p  id="email-error" class="error" for="name"></p>
                     <label id="form-label" class="form-label">Password</label>
-                    <input type="text" id="form-input" class="form-control">
+                    <input type="password" id="password" class="form-control" name="password">
+                    <p  id="password-error" class="error" for="name"></p>
                   </div>
                   <div class="mt-4">
-                    <button type="button" class="btn mb-1 waves-effect waves-light btn-primary">
-                      Update
-                    </button>
+                    <button type="submit" class="btn mb-1 waves-effect waves-light btn-primary">Update</button>
                   </div>
-
                 </form>
+
               </div>
             </div>
           </div>

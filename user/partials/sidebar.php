@@ -63,14 +63,6 @@
                 </a>
               </li>
 
-              <li class="sidebar-item">
-                <a class="sidebar-link" href="user-profile" aria-expanded="false">
-                  <span>
-                    <i class="ti ti-user "></i>
-                  </span>
-                  <span class="hide-menu ">Profile</span>
-                </a>
-              </li>
 
               <li class="sidebar-item">
                 <a class="sidebar-link" href="download-certificate" aria-expanded="false">
@@ -81,6 +73,15 @@
                 </a>
               </li>
 
+              
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="user-profile" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-user "></i>
+                  </span>
+                  <span class="hide-menu ">Profile</span>
+                </a>
+              </li>
 
 
             </ul>

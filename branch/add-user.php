@@ -35,69 +35,59 @@
                     </div>
                     <div class="modal-body">
 
-                      <form>
+                      <form id="add-user-form">
                         <div class="row">
                           <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                              <label for="exampleInputEmail1" class="form-label">Employee Id</label>
-                              <input type="number" class="form-control">
+                              <label class="form-label">Employee Id</label>
+                              <input name="empId" id="empId" type="number" class="form-control">
                             </div>
                           </div>
-
                           <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                              <label for="exampleInputEmail1" class="form-label">Name</label>
-                              <input type="text" class="form-control">
+                              <label class="form-label">Name</label>
+                              <input name="name" id="name" type="text" class="form-control">
                             </div>
                           </div>
-
                           <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                              <label for="exampleInputEmail1" class="form-label">Email</label>
-                              <input type="email" class="form-control">
+                              <label class="form-label">Email</label>
+                              <input name="email" id="email" type="email" class="form-control">
                             </div>
                           </div>
-
                           <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                              <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                              <input type="number" class="form-control">
+                              <label class="form-label">Phone Number</label>
+                              <input name="phone" id="phone" type="number" class="form-control">
                             </div>
                           </div>
-
                           <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                              <label for="exampleInputEmail1" class="form-label">Address</label>
-                              <input type="address" class="form-control">
+                              <label class="form-label">Address</label>
+                              <input name="address" id="address" type="address" class="form-control">
                             </div>
                           </div>
-
                           <div class="col-lg-6 pb-3">
                             <div class="form-group">
-                              <label for="exampleInputEmail1" class="form-label">Passport Number</label>
-                              <input type="Number" class="form-control">
+                              <label class="form-label">Passport Number</label>
+                              <input name="passportNumber" id="passportNumber" type="Number" class="form-control">
                             </div>
                           </div>
                         </div>
-
                       </form>
-
                     </div>
                     <div class="modal-footer">
-                      <button type="button"
+                      <button id="adduser-btn" type="submit"
                         class="btn btn-light-primary text-primary font-medium waves-effect text-start">
                         Submit
                       </button>
-
                       <button type="button" class="btn btn-light-danger text-danger font-medium waves-effect text-start"
                         data-bs-dismiss="modal">
                         Close
                       </button>
                     </div>
                   </div>
-                  <!-- /.modal-content -->
                 </div>
-                <!-- /.modal-dialog -->
               </div>
             </div>
           </div>
@@ -128,14 +118,15 @@
                     </div>
                     <div class="modal-body">
 
-                      <div class="custom-file container">
-                        <input type="file" class="form-control" required="">
-
-                      </div>
+                      <form id="excel-addUser" action="">
+                        <div class="custom-file container">
+                          <input name="excelDoc" type="file" class="form-control" required="">
+                        </div>
+                      </form>
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button"
+                      <button type="button" id="addUser-excelbtn"
                         class="btn btn-light-primary text-primary font-medium waves-effect text-start">
                         Submit
                       </button>

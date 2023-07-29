@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Convert to PDF</title>
-  <!-- Include jsPDF library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+  <title>Profile Edit Form</title>
+  <!-- Add the jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Add the jQuery Validate plugin -->
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 </head>
 <body>
-  <div id="printable-content">
-    <!-- The content you want to convert to PDF -->
-    <h1>Hello, world!</h1>
-    <p>This is the content to be converted to PDF.</p>
-  </div>
-  <button id="convert-button">Convert to PDF</button>
+  <form id="profileEdit" method="POST" action="" class="mt-4">
+    <div class="form-group form-box">
+      <label id="form-label" class="form-label">Name</label>
+      <input type="text" id="name" class="form-control" name="name">
+
+      <label id="form-label" class="form-label">Email</label>
+      <input type="text" id="email" class="form-control" name="email">
+
+      <label id="form-label" class="form-label">Password</label>
+      <input type="text" id="password" class="form-control" name="password">
+    </div>
+    <div class="mt-4">
+      <button type="submit" class="btn mb-1 waves-effect waves-light btn-primary">Update</button>
+    </div>
+  </form>
 
   <script>
-    document.getElementById("convert-button").addEventListener("click", function() {
-      // Create a new jsPDF instance
-      var doc = new jsPDF();
-
-      // Get the printable area element
-      var printableArea = document.getElementById("printable-content");
-
-      // Convert the printable area to a data URL
-      domtoimage.toPng(printableArea)
-        .then(function(dataUrl) {
-          // Add the image (PNG) of the printable area to the PDF
-          doc.addImage(dataUrl, "PNG", 10, 10, 190, 100); // Adjust the position and size as needed
-
-          // Save the PDF
-          doc.save("converted.pdf");
-        })
-        .catch(function(error) {
-          console.error("Error converting to PDF:", error);
-        });
+    $(document).ready(function () {
+      // Add validation rules to the form inputs
+      $("#profileEdit").validate({
+        rules: {
+          name: "required", 
+          email: {
+            required: true,
+            email: true
+          },
+          password: "required"
+        },
+        messages: {
+          name: "Please enter your name",
+          email: {
+            required: "Please enter your email",
+            email: "Please enter a valid email address"
+          },
+          password: "Please enter your password"
+        },
+       
+        highlight: function (element, errorClass, validClass) {
+          // Add the 'is-invalid' class to the invalid input element
+          $(element).addClass("is-invalid");
+        },
+        unhighlight: function (element, errorClass, validClass) {
+          // Remove the 'is-invalid' class from the valid input element
+          $(element).removeClass("is-invalid");
+        }
+      });
     });
   </script>
 </body>
